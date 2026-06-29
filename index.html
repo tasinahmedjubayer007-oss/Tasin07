@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prank Boy Jubayer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Channel</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
 
-    .header {
-      background: linear-gradient(90deg, #ff0000, #b30000);
-      padding: 20px;
-      font-size: 26px;
-      font-weight: bold;
-    }
+  /* pic */
+  background: url('YOUR_IMAGE_LINK') no-repeat center center/cover;
+}
 
-    .hero {
-      padding: 60px 20px;
-    }
+/* Dark overlay */
+.overlay {
+  background: rgba(0,0,0,0.75);
+  min-height: 100vh;
+}
 
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+}
 
-    .hero p {
-      color: #bbb;
-      font-size: 18px;
-    }
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: red;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .btn:hover {
-      background: darkred;
-    }
+.hero h1 {
+  font-size: 42px;
+}
 
-    .card {
-      background: #1c1c1c;
-      margin: 30px auto;
-      padding: 20px;
-      max-width: 700px;
-      border-radius: 10px;
-    }
+.hero p {
+  color: #ccc;
+}
 
-    iframe {
-      width: 100%;
-      height: 315px;
-      border-radius: 10px;
-    }
+/* Subscribe button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    .footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #111;
-      color: #777;
-    }
-  </style>
+.btn:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+/* Video grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(30,30,30,0.9);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card iframe {
+  width: 100%;
+  height: 180px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  color: #ddd;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #888;
+}
+</style>
+
 </head>
 
 <body>
 
+<div class="overlay">
+
   <div class="header">
-    🎬 Prank Boy Jubayer Official
+    <div class="logo">▶ My Channel</div>
   </div>
 
   <div class="hero">
-    <h1>Welcome to My Channel</h1>
-    <p>Prank • Entertainment • Fun Videos</p>
+    <h1>Welcome to My YouTube Channel</h1>
+    <p>Prank • Tech • Entertainment</p>
 
     <a class="btn" href="https://youtube.com/@prank-boy-jubayer" target="_blank">
       ▶ Subscribe Now
     </a>
   </div>
 
-  <div class="card">
-    <h2>🔥TASIN AHMED JUBAYER🔥</h2>
+  <div class="grid">
 
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
 
   </div>
 
-  <div class="card">
-    <h2>📌 About Channel</h2>
-    <p>
-      Welcome to Prank Boy Jubayer channel. Here you will find prank videos,
-      funny content, and entertainment videos every week.
-    </p>
+  <div class="about">
+    <h2>About Channel</h2>
+    <p>Here you will find prank, tech and entertainment videos every week.</p>
   </div>
 
   <div class="footer">
-    © 2022 Prank Boy Jubayer | Made with Tasin Ahmed
+    © 2026 Prank Boy Jubayer
   </div>
+
+</div>
 
 </body>
 </html>
